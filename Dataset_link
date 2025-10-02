@@ -1,0 +1,13 @@
+Student Performance Dataset - Portuguese Language Course
+
+Source: UCI Machine Learning Repository
+Kaggle: https://www.kaggle.com/datasets/larsen0966/student-performance-data-set
+
+File: student-por.csv
+Samples: 649
+Features: 33 (30 after preprocessing)
+Target: G3 converted to Pass/Fail
+
+Citation:
+P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance.
+FUBUTEC 2008.
