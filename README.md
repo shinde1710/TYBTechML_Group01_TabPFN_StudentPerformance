@@ -14,8 +14,8 @@ This project reproduces the TabPFN paper and extends it to the Education domain 
 - **Batch:** TYBTech ML
 - **Group Number:** 01
 - **Members:**
-  1. [Your Name] - [Your Roll Number]
-  2. [Partner Name] - [Partner Roll Number] OR Solo
+  1. Aryan Shinde - 16014223018
+ 
 
 ---
 
