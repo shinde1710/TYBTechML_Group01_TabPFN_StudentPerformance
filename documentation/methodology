@@ -1,0 +1,47 @@
+# Methodology
+
+## 1. Dataset Selection
+
+### Original Paper Datasets
+- credit-g (OpenML ID: 31) - 1000 samples, 20 features
+- diabetes (OpenML ID: 37) - 768 samples, 8 features  
+- vehicle (OpenML ID: 54) - 846 samples, 18 features
+- breast-w (OpenML ID: 15) - 699 samples, 9 features
+
+### New Dataset
+- Student Performance (Portuguese course)
+- 649 students, 33 original features
+- Converted to binary classification: Pass (G3≥10) / Fail (G3<10)
+
+## 2. Data Preprocessing
+
+### Steps:
+1. Converted G3 grades to binary (Pass/Fail)
+2. Dropped G1, G2, G3 to prevent data leakage
+3. Label encoded all categorical variables
+4. Filled missing values with mean
+5. Final: 649 samples, 30 features, 2 classes
+
+## 3. Model Configuration
+
+### TabPFN
+- Device: CPU
+- No hyperparameter tuning (default settings)
+
+### Baseline Models
+- XGBoost: default + random_state=42
+- LightGBM: default + random_state=42
+- Random Forest: n_estimators=100, random_state=42
+- Logistic Regression: max_iter=1000, random_state=42
+
+## 4. Evaluation
+
+### Split
+- Train: 70%
+- Test: 30%
+- Stratified sampling
+
+### Metrics
+- Accuracy
+- ROC-AUC
+- Training Time
