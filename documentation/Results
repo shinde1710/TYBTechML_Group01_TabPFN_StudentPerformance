@@ -1,0 +1,41 @@
+# Results
+
+## Original Paper Reproduction
+
+| Dataset   | Accuracy | Time(s) | Samples | Features |
+|-----------|----------|---------|---------|----------|
+| credit-g  | 0.7800   | 76.81   | 500     | 20       |
+| diabetes  | 0.7474   | 28.83   | 384     | 8        |
+| vehicle   | 0.8676   | 62.11   | 423     | 18       |
+| breast-w  | 0.9543   | 28.86   | 349     | 9        |
+
+**Status**: Successfully reproduced TabPFN performance on benchmark datasets
+
+## Student Performance Prediction
+
+| Model         | Accuracy | ROC-AUC | Time(s) |
+|---------------|----------|---------|---------|
+| TabPFN        | 0.8154   | 0.7665  | 135.34  |
+| XGBoost       | 0.8154   | 0.7172  | 0.18    |
+| LightGBM      | 0.8256   | 0.7461  | 0.13    |
+| Random Forest | 0.8205   | 0.7589  | 0.25    |
+| Logistic Reg  | 0.8051   | 0.7180  | 0.02    |
+
+## Key Findings
+
+1. **TabPFN Performance**
+   - Best ROC-AUC (0.7665)
+   - Competitive accuracy without tuning
+   - Longer training time
+
+2. **Best Overall**: LightGBM (accuracy: 0.8256)
+
+3. **TabPFN vs Baselines**
+   - TabPFN: No tuning needed, good generalization
+   - Gradient Boosting: Faster but needs tuning
+   - Random Forest: Balanced performance
+   - Logistic Regression: Fastest but lowest accuracy
+
+## Conclusion
+
+TabPFN successfully transferred to educational domain with competitive performance and zero hyperparameter tuning.
